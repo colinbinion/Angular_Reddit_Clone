@@ -5,12 +5,20 @@ img {
 h4 {
   margin-top: 0;
 }
+/*
+.well {
 
-.clear {
-  clear: both;
 }
 
-.glyphicon-arrow-up:hover, .glyphicon-arrow-down:hover, .hoverable:hover {
+.row {
+
+}*/
+
+.clearing {
+  clear: both;
+}
+/*cursor: auto does not allow for submit to turn to a pointer*/
+.glyphicon-arrow-up:hover, .glyphicon-arrow-down:hover, .hover:hover {
   cursor: pointer;
 }
 
@@ -22,15 +30,15 @@ h4 {
   color: red;
 }
 
-.comment {
+.comments {
   opacity: 1;
 }
 
-.comment.ng-hide-add, .comment.ng-hide-remove {
+.comments.ng-hide-add, .comments.ng-hide-remove {
   transition: 1s linear all;
 }
 
-.comment.ng-hide {
+.comments.ng-hide {
   opacity: 0;
 }
 
