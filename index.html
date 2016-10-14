@@ -10,7 +10,7 @@
 
     <!-- BS, FontAwesome, GoogleFont, misc libraries, **doublecheck on links vs. scripts and location in the body -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
 
@@ -22,13 +22,13 @@
 		<![endif]-->
 
   </head>
-  <body ng-controller="#">
+  <body ng-controller="app_controller">
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <a class="navbar-brand" href="javascript:void(0)">Reddit Clone</a>
+      <a class="navbar-brand">Reddit Clone</a>
       <ul class="nav navbar-nav">
-        <li><a href="javascript:void(0)" ng-click="toggleNewPostVisibility()"><span class="glyphicon glyphicon-plus"></span>Submit a Post</a></li>
+        <li><a ng-click="toggleNewPostVisibility()"><span class="glyphicon glyphicon-plus"></span>Submit a Post</a></li>
         <li class="navbar-form">
           <div class="form-inline">
             <input type="text" placeholder="search" class="form-control" ng-model="view.searchText">
@@ -122,12 +122,11 @@
 
 
 
-	<!-- fonts, animate, etc.  **doublecheck on links vs. scripts and location in the body -->
+	<!-- fonts, animate, etc.  **doublecheck on links vs. scripts and location in the body **jQuery mobile CDN conflicts w BS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
